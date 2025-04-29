@@ -21,6 +21,7 @@ export function Sidebar({ sidebarToggle }) {
                                 key={index}
                                 href={item.href}
                                 className="flex items-center text-sm py-3 px-6 hover:bg-gray-100 duration-300 cursor-pointer"
+                                title={item.name}
                             >
                                 {item.icon}
                                 <span className={`mx-4 font-medium duration-500 font-thin ${!sidebarToggle && "hidden"}`}>{item.name}</span>

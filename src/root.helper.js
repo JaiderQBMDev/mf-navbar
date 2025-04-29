@@ -71,7 +71,7 @@ export const dataMenu = [
     {
         name: 'Ruleta',
         href: ConfigNameRoutes.configRoulette,
-        icon: <IconRoulette color="#bb592e"/>,
+        icon: <IconRoulette color="#bb592e" size={20}/>,
         isPublic: false
     },
     {
