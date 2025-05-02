@@ -2,8 +2,11 @@ import { ConfigNameRoutes, routesUrl } from "./routes/constants";
 import {
     IconHome,
     IconProfile,
+    IconInvalidPaymentMethods,
     IconCostumerMenu,
     IconUserMenu,
+    IconRecipes,
+    IconTraining,
     IconBlackList,
     IconQuotations,
     IconConfigReservations,
@@ -22,6 +25,30 @@ export const dataMenu = [
     },
     {
         name: 'Afiliados',
+        href: ConfigNameRoutes.afiliates,
+        icon: <IconProfile />,
+        isPublic: false
+    },
+    {
+        name: 'Mis Afiliados',
+        href: ConfigNameRoutes.afiliates,
+        icon: <IconProfile />,
+        isPublic: false
+    },
+    {
+        name: 'Metodos de pago no Validos',
+        href: ConfigNameRoutes.afiliates,
+        icon: <IconInvalidPaymentMethods />,
+        isPublic: false
+    },
+    {
+        name: 'Lista General Activos',
+        href: ConfigNameRoutes.afiliates,
+        icon: <IconProfile />,
+        isPublic: false
+    },
+    {
+        name: 'Lista General Activos mis Carterizados',
         href: ConfigNameRoutes.afiliates,
         icon: <IconProfile />,
         isPublic: false
@@ -48,6 +75,18 @@ export const dataMenu = [
         name: 'Blacklist Información',
         href: ConfigNameRoutes.blackListData,
         icon: <IconBlackList />,
+        isPublic: false
+    },
+    {
+        name: 'Nutrición',
+        href: ConfigNameRoutes.BlackList,
+        icon: <IconRecipes />,
+        isPublic: false
+    },
+    {
+        name: 'Entrenamientos',
+        href: ConfigNameRoutes.BlackList,
+        icon: <IconTraining />,
         isPublic: false
     },
     {

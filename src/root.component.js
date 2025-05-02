@@ -5,7 +5,7 @@ const Layout = () => {
 
   const [sidebarToggle, setSidebarToggle] = useState(true);
   return (
-    <div className='flex'>
+    <div>
       <Navbar
         sidebarToggle={sidebarToggle}
         setSidebarToggle={setSidebarToggle}
