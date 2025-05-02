@@ -24,7 +24,7 @@ export function Navbar({ sidebarToggle, setSidebarToggle }) {
         <nav className={`p-5 pr-8 flex justify-between items-center fixed z-10 duration-300 bg-white ${sidebarToggle ? 'left-80' : 'left-20'} right-0`}>
             <div className="flex items-center text-xl gap-x-8">
                 <span
-                    className="text-white font-semibold cursor-pointer"
+                    className="text-white font-semibold cursor-pointer hover:bg-gray-100 p-2 rounded-full"
                     onClick={() => setSidebarToggle(!sidebarToggle)}
                 >
                     <FiMenu size={20} className='text-black' />
