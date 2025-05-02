@@ -6,7 +6,7 @@ export function Sidebar({ sidebarToggle }) {
         <div className={`flex flex-col duration-300 ${sidebarToggle ? "w-80" : "w-20"} h-screen relative`}>
             <div className="flex items-center gap-x-4 py-5 px-7">
                 <LogMTBM
-                    className={`cursor-pointer duration-500 ${sidebarToggle && "rotate-180"}`}
+                    className={`cursor-pointer duration-500 ${sidebarToggle && "rotate-180"} text-9xl`}
                 />
                 <p className={`text-black origin-left font-medium text-2xl font-light duration-500 ${!sidebarToggle && "hidden"}`}>
                     <strong className="text-xl font-black">MYBT</strong> comercial
@@ -23,7 +23,9 @@ export function Sidebar({ sidebarToggle }) {
                                 className="flex items-center text-sm py-3 px-6 hover:bg-gray-100 duration-300 cursor-pointer"
                                 title={item.name}
                             >
-                                {item.icon}
+                                <span className="min-w-[24px] text-[20px] flex items-center justify-center">
+                                    {item.icon}
+                                </span>
                                 <span className={`mx-4 font-medium duration-500 font-thin ${!sidebarToggle && "hidden"}`}>{item.name}</span>
                             </a>
                         </>
